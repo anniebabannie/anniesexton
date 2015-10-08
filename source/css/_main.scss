@@ -1,0 +1,26 @@
+* {
+  font-family: 'Lato', sans-serif;
+  color: #444;
+}
+a {
+  color: $pink;
+  @include transition(color 0.15s);
+  &:hover,
+  &:active,
+  &:focus { 
+    color: shade($pink, 20%);
+    text-decoration: none;
+  }
+}
+h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.table {
+  display: table;
+  height: 100%;
+}
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}

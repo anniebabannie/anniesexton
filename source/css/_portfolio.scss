@@ -1,0 +1,29 @@
+.project-block {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.project-screenshot {
+  background: gray;
+  height: 200px;
+  display: block;
+}
+.project-details {
+  padding: 20px;
+  h3 { 
+    margin-top: 0;
+  }
+  .tag {
+    display: inline-block;
+    padding: 3px 5px;
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 12px;
+    margin: 2px 2px 2px 0;
+  }
+}
+.project-tags {
+  margin-top: 15px;
+}

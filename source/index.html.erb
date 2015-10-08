@@ -1,10 +1,142 @@
 ---
-title: Welcome to Middleman
+title: Annie Sexton | Front-end Web Developer
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<div id="hero" class="table gray-gradient">
+  <div class="table-cell">
+    <div class="container">
+      <div class="row">
+        <div id="hero-inner">
+          <div class="col-sm-3">
+            <div id="headshot2" class="headshot"></div>
+            <div id="headshot1" class="headshot"></div>
+          </div>
+          <div class="col-sm-8">
+            <h1>My name is <strong>Annie Sexton</strong>.<br>
+            I'm a web developer, foodie, and traveler.</h1>
+
+            <nav id="top-nav">
+              <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#about">Portfolio</a></li>
+                <li><a href="#about">Resume</a></li>
+                <li><a href="#about">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="hero-overlay">
+    <%= image_tag "city.png" %>
+  </div>
+</div>
+
+<div class="container">
+  <div id="portfolio">
+    <div class="section-header">
+      <h2>Portfolio</h2>
+    </div>
+
+    <% data.portfolio.portfolio.each do |project| %>
+      <div class="col-md-4 col-sm-6">
+        <div class="project-block">
+          <a href="<%= project.url %>" target="_blank"class="project-screenshot"></a>
+          <div class="project-details">
+            <h3><a href="<%= project.url %>" target="_blank"><%= project.name %></a></h3>
+            <div class="where"><i class="icon-location"></i> <%= project.where %></div>
+            <div class="project-tags">
+              <% project.tags.each do |tag| %>
+                <span class="tag"><%= tag %></span>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div id="resume">
+  <div class="container">
+    <div class="section-header">
+      <h2>Work Experience</h2>
+    </div>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div id="work-experience">
+          <% data.work_experience.work_experience.each do |work| %>
+            <div class="work-block">
+              <div class="work-header">
+                <h3><%= work.title %></h3>
+                <h4><%= work.company %></h4>
+                <div class="when-where">
+                  <div class="where"><a href="http://maps.google.com/?q=<%= work.location%>" target="_blank"><i class="icon-location"></i><%= work.location %></a></div>
+                  <div class="when"><%= work.when %></div>
+                </div>
+              </div>
+              <div class="work-body"><%= work.description.gsub(/\n/, '<div class="break"></div>') %></div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header">
+      <h2>Skills</h2>
+    </div>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div id="skills">
+          <% data.skills.skills.each do |skill_group| %>
+            <div class="skill-group">
+              <div class="skill-group-title">
+                <h3><%= skill_group.group %></h3>
+              </div>
+              <div class="skill-body">
+                <div>
+                  <% skill_group.skills.each do |skill_set| %>
+                    <ul>
+                      <% skill_set.each do |skill| %>
+                        <li><%= skill %></li>
+                      <% end %>
+                    </ul>
+                  <% end %>
+                  <% if (skill_group.experience_with.count > 0) %>
+                    <ul>
+                      <strong>Experience with: </strong>
+                        <% skill_group.experience_with.each do |skill| %>
+                          <li><%= skill %></li>
+                        <% end %>
+                    </ul>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div><!-- end Skills -->
+
+    <div class="section-header">
+      <h2>Education</h2>
+    </div>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div id="skills">
+          <% data.education.education.each do |education| %>
+            <div class="education-block">
+              <div class="education-header">
+                <h3><%= education.title %></h3>
+                <h4><%= education.subtitle %></h4>
+                <p><a href="http://maps.google.com/?q=<%= education.location %>" target="_blank"><i class="icon-location"></i><%= education.location %></a></p>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div><!-- end Education -->
+
+  </div>
+</div>

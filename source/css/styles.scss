@@ -1,17 +1,16 @@
 $bootstrap-sass-asset-helper: false;
 @import "bootstrap/bootstrap";
+@import "../fonts/fontello/css/fontello.css";
 
 // Custom imports and Compass
 @import 'compass/css3/transition';
 @import 'compass/css3/border-radius';
 @import 'compass/css3/box-shadow';
 
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media (min-width: $screen-sm-min) { }
-
-@media (min-width: $screen-md-min) { }
-
-@media (min-width: $screen-lg-min) { }
+@import 'variables';
+@import 'main';
+@import 'hero';
+@import 'portfolio';
+@import 'work-experience';
+@import 'skills';
+@import 'education';

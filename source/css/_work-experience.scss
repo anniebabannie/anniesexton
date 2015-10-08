@@ -1,0 +1,56 @@
+.section-header {
+  text-align: center;
+  padding: 60px 0;
+}
+#resume {
+  padding: 60px 0;
+}
+.work-block {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 48%;
+  margin-bottom: 20px;
+  margin-right: 2%;
+  overflow: hidden;
+  &:nth-child(even) {
+    margin-right: 0;
+  }
+}
+.work-header {
+  background: #F9F9F9;
+  h3 {
+    margin-top: 0;
+  }
+  h4 {
+    color: gray;
+  }
+  .when-where { 
+    font-style: italic;
+    margin: 20px -20px;
+    div {
+      text-align: center;
+      display: inline-block;
+      background: #fff;
+      width: 50%;
+      float: left;
+      padding: 10px 0;
+      border: 1px solid #eee;
+      border-left: none;
+      border-right: none;
+    }
+    .where {
+      border-right: 1px solid #eee;
+    }
+  }
+}
+.work-header,
+.work-body {
+  padding: 20px;
+}
+.work-body {
+  margin-top: 10px;
+  .break { 
+    content: " "; 
+    height: 10px;
+  }
+}

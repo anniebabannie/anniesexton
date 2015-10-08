@@ -1,0 +1,13 @@
+.education-block {
+  width: 48%;
+  display: inline-block;
+  float: left;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 20px;
+  height: 134px;
+  h3 { margin-top: 0; }
+  &:nth-child(odd) {
+    margin-right: 4%;
+  }
+}

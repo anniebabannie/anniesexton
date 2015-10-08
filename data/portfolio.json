@@ -1,0 +1,128 @@
+{
+  "portfolio": [
+    {
+      "name": "Complete Trailers",
+      "where": "Digital Telepathy",
+      "url": "http://www.completetrailers.com/",
+      "tags": [
+        "WordPress",
+        "Custom Theme",
+        "HTML5/CSS3",
+        "Responsive",
+        "jQuery"
+      ],
+      "description": ""
+    },
+    {
+      "name": "Dealstruck",
+      "where": "Digital Telepathy",
+      "url": "https://www.dealstruck.com/",
+      "tags": [
+        "Middleman",
+        "HTML5/CSS3",
+        "Responsive",
+        "jQuery",
+        "Form interactions"
+      ],
+      "description": ""
+    },
+    {
+      "name": "Digital Telepathy Blog",
+      "where": "Digital Telepathy",
+      "url": "http://www.dtelepathy.com/blog",
+      "tags": [
+        "WordPress",
+        "Custom Theme",
+        "Custom Plugins",
+        "HTML5/CSS3",
+        "Responsive",
+        "jQuery + AJAX"
+      ],
+      "description": ""
+    },
+    {
+      "name": "New Relic Blog",
+      "where": "Digital Telepathy",
+      "url": "https://blog.newrelic.com/",
+      "tags": [
+        "WordPress",
+        "HTML5/CSS3",
+        "Responsive"
+      ],
+      "description": ""
+    },
+    {
+      "name": "Social Centiv Landing Page",
+      "where": "Digital Telepathy",
+      "url": "",
+      "tags": [
+        "HTML5/CSS3",
+        "Responsive",
+        "jQuery + AJAX"
+      ],
+      "description": ""
+    },
+    {
+      "name": "OpenJet",
+      "where": "Digital Telepathy",
+      "url": "http://www.openjet.com/operators/index.html",
+      "tags": [
+        "HTML5/CSS3",
+        "Responsive",
+        "jQuery"
+      ],
+      "description": ""
+    },
+    {
+      "name": "Studio 2055",
+      "where": "Studio 2055",
+      "url": "http://www.studio2055.com",
+      "tags": [
+        "WordPress",
+        "CSS3",
+        "Responsive",
+        "jQuery"
+      ],
+      "description": ""
+    },
+    {
+      "name": "Forbes Wellness",
+      "where": "Freelance",
+      "url": "http://forbeswellnesspractice.com/",
+      "tags": [
+        "Web Design",
+        "Logo Design",
+        "WordPress",
+        "Custom Theme",
+        "HTML5/CSS3",
+        "Responsive",
+        "jQuery"
+      ],
+      "description": ""
+    },
+    {
+      "name": "Active Gaming Media",
+      "where": "Active Gaming Media Inc.",
+      "url": "http://www.activegamingmedia.com/en/",
+      "tags": [
+        "Web Design",
+        "Ruby on Rails",
+        "Custom CMS",
+        "HTML5/CSS3",
+        "Responsive",
+        "jQuery + AJAX"
+      ],
+      "description": ""
+    }
+    // {
+    //   "name": "Michael Bellipanni: Game Designer Portfolio",
+    //   "where": "Freelance",
+    //   "url": "http://bellipanni.com/",
+    //   "tags": [
+    //     "Web Design",
+    //     "HTML5/CSS3"
+    //   ],
+    //   "description": ""
+    // }
+  ]
+}

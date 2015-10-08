@@ -1,0 +1,51 @@
+{
+  "skills": [
+    {
+      "group": "Client-side",
+      "skills": [
+        [
+        "HTML5",
+        "CSS3",
+        "jQuery + JavaScript",
+        "Grunt",
+        "Middleman"
+        ]
+      ],
+      "experience_with": [ "ReactJS", "AngularJS" ]
+    },
+    {
+      "group": "Server-side",
+      "skills": [
+        [
+          "PHP",
+          "Ruby on Rails",
+          "WordPress – Theme Development",
+          "WordPress – Plugin Development",
+          "WordPress – VIP",
+          "Git and SVN"
+        ]
+      ],
+      "experience_with": [ "Laravel", "CodeIgniter" ]
+    },
+    {
+      "group": "Design & More",
+      "skills": [
+        [
+          "Sketch",
+          "Adobe Photoshop",
+          "Adobe Illustrator",
+          "Adobe Fireworks",
+          "Adobe Premiere Pro"
+        ],
+        [
+          "Illustration",
+          "Painting – Digital & Traditional"
+        ],
+        [
+          "Conversationally fluent in Japanese"
+        ]
+      ],
+      "experience_with": []
+    }
+  ]
+}
