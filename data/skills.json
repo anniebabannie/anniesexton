@@ -5,7 +5,9 @@
       "skills": [
         [
         "HTML5",
-        "CSS3",
+        "HAML",
+        "CSS3 + SASS + LESS",
+        "Bootstrap",
         "jQuery + JavaScript",
         "Grunt",
         "Middleman"
