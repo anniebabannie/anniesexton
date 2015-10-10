@@ -1,6 +1,19 @@
 {
   "portfolio": [
     {
+      "name": "Skimword",
+      "where": "(personal project)",
+      "url": "http://www.skimwordapp.com/",
+      "tags": [
+        "Ruby on Rails",
+        "HTML5/CSS3",
+        "ReactJS",
+        "jQuery"
+      ],
+      "img": "skimword.png",
+      "description": ""
+    },
+    {
       "name": "Complete Trailers",
       "where": "Digital Telepathy",
       "url": "http://www.completetrailers.com/",
@@ -11,6 +24,7 @@
         "Responsive",
         "jQuery"
       ],
+      "img": "completetrailers.png",
       "description": ""
     },
     {
@@ -24,6 +38,7 @@
         "jQuery",
         "Form interactions"
       ],
+      "img": "dealstruck.png",
       "description": ""
     },
     {
@@ -38,6 +53,7 @@
         "Responsive",
         "jQuery + AJAX"
       ],
+      "img": "dtblog.png",
       "description": ""
     },
     {
@@ -49,19 +65,21 @@
         "HTML5/CSS3",
         "Responsive"
       ],
+      "img": "newrelic-blog.png",
       "description": ""
     },
-    {
-      "name": "Social Centiv Landing Page",
-      "where": "Digital Telepathy",
-      "url": "",
-      "tags": [
-        "HTML5/CSS3",
-        "Responsive",
-        "jQuery + AJAX"
-      ],
-      "description": ""
-    },
+    // {
+    //   "name": "Social Centiv Landing Page",
+    //   "where": "Digital Telepathy",
+    //   "url": "",
+    //   "tags": [
+    //     "HTML5/CSS3",
+    //     "Responsive",
+    //     "jQuery + AJAX"
+    //   ],
+    //   "img": "skimword.png",
+    //   "description": ""
+    // },
     {
       "name": "OpenJet",
       "where": "Digital Telepathy",
@@ -71,6 +89,7 @@
         "Responsive",
         "jQuery"
       ],
+      "img": "openjet.png",
       "description": ""
     },
     {
@@ -83,6 +102,7 @@
         "Responsive",
         "jQuery"
       ],
+      "img": "studio2055.png",
       "description": ""
     },
     {
@@ -98,6 +118,7 @@
         "Responsive",
         "jQuery"
       ],
+      "img": "forbeswellness.png",
       "description": ""
     },
     {
@@ -112,6 +133,7 @@
         "Responsive",
         "jQuery + AJAX"
       ],
+      "img": "agm.png",
       "description": ""
     }
     // {

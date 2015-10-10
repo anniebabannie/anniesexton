@@ -2,16 +2,18 @@
   text-align: center;
   padding: 60px 0;
 }
-#resume {
+#work-experience {
   padding: 60px 0;
 }
 .work-block {
   border: 1px solid #ccc;
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
   border-radius: 3px;
   width: 48%;
   margin-bottom: 20px;
   margin-right: 2%;
   overflow: hidden;
+  background: #fff;
   &:nth-child(even) {
     margin-right: 0;
   }

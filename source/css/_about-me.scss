@@ -1,5 +1,61 @@
 #about {
+  padding-bottom: 80px;
   p {
     font-size: 16px;
   }
+  .headshot-wrapper {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      background: #D7D7D9;
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      z-index: 0;
+    }
+    &:after {
+      bottom: 50%;
+    }
+  }
+  .headshot {
+    display: inline-block;
+    margin-right: 40px;
+    height: 220px;
+    width: 220px;
+    &:last-child { margin-right: 0; }
+
+    position: relative;
+    z-index: 1;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: calc(100% - 4px);
+      height: calc(100% - 4px);
+      border-radius: 50%;
+      border: 6px solid #fff;
+      margin: 2px;
+    }
+  }
+  section {
+    margin-bottom: 40px;
+  }
+  .about-bio {
+    margin-top: -172px;
+    padding-bottom: 80px;
+    padding-top: 150px;
+    background: #F9F9F9;
+  }
+}
+#headshota {
+  background-image: url(../img/anniea.png);
+}
+#headshotb {
+  background-image: url(../img/annieb.png);
+}
+#headshotc {
+  background-image: url(../img/anniec.png);
 }

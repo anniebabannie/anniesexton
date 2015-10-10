@@ -35,6 +35,11 @@
     font-size: 16px;
     font-style: italic;
   }
+  .headshot {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }
 #hero-overlay {
   content: "";
@@ -45,7 +50,7 @@
   right: 0;
   margin: auto;
   overflow: hidden;
-  border-bottom: 1px solid #999;
+  // border-bottom: 1px solid #999;
   z-index: 0;
   img {
     position: absolute;
@@ -55,9 +60,6 @@
   }
 }
 .headshot {
-  position: absolute;
-  left: 0;
-  top: 0;
   height: 200px;
   width: 200px;
   border-radius: 50%;

@@ -13,14 +13,14 @@ title: Annie Sexton | Front-end Web Developer
           </div>
           <div class="col-sm-8">
             <h1>My name is <strong>Annie Sexton</strong>.<br>
-            I'm a web developer, foodie, and traveler.</h1>
+            I'm a web developer and travel lover.</h1>
 
             <nav id="top-nav">
               <ul>
-                <li><a href="#about">About</a></li>
                 <li><a href="#about">Portfolio</a></li>
-                <li><a href="#about">Resume</a></li>
-                <li><a href="#about">Contact</a></li>
+                <li><a href="#about">Work Experience</a></li>
+                <li><a href="#about">Skills &amp; Education</a></li>
+                <li><a href="#about">About</a></li>
               </ul>
             </nav>
           </div>
@@ -29,43 +29,48 @@ title: Annie Sexton | Front-end Web Developer
     </div>
   </div>
   <div id="hero-overlay">
-    <%= image_tag "city.png" %>
+
   </div>
 </div>
 
-<div class="container">
-  <div id="portfolio">
+<div id="portfolio" class="gray-section">
+  <div class="container">
     <div class="section-header">
       <h2>Portfolio</h2>
     </div>
-
-    <% data.portfolio.portfolio.each do |project| %>
-      <div class="col-md-4 col-sm-6">
-        <div class="project-block">
-          <a href="<%= project.url %>" target="_blank"class="project-screenshot"></a>
-          <div class="project-details">
-            <h3><a href="<%= project.url %>" target="_blank"><%= project.name %></a></h3>
-            <div class="where"><i class="icon-location"></i> <%= project.where %></div>
-            <div class="project-tags">
-              <% project.tags.each do |tag| %>
-                <span class="tag"><%= tag %></span>
-              <% end %>
+    <div class="row">
+      <% data.portfolio.portfolio.each do |project| %>
+        <div class="col-md-4 col-sm-6 portfolio-block-wrapper">
+          <div class="project-block">
+            <a href="<%= project.url %>" target="_blank"class="project-screenshot">
+              <%= image_tag "portfolio/" + project.img %>
+              <i class="icon-link-ext"></i>
+              <span class="overlay"></span>
+            </a>
+            <div class="project-details">
+              <h3><a href="<%= project.url %>" target="_blank"><%= project.name %></a></h3>
+              <div class="where"><i class="icon-location"></i> <%= project.where %></div>
+              <div class="project-tags">
+                <% project.tags.each do |tag| %>
+                  <span class="tag"><%= tag %></span>
+                <% end %>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
 </div>
 
-<div id="resume">
+<div id="work-experience">
   <div class="container">
     <div class="section-header">
       <h2>Work Experience</h2>
     </div>
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2">
-        <div id="work-experience">
+        <div id="work-experience-wrapper">
           <% data.work_experience.work_experience.each do |work| %>
             <div class="work-block">
               <div class="work-header">
@@ -82,7 +87,10 @@ title: Annie Sexton | Front-end Web Developer
         </div>
       </div>
     </div>
-
+  </div>
+</div><!-- end Resume -->
+<div id="skills-education" class="gray-section">
+  <div class="container">
     <div class="section-header">
       <h2>Skills</h2>
     </div>
@@ -138,32 +146,44 @@ title: Annie Sexton | Front-end Web Developer
       </div>
     </div><!-- end Education -->
   </div>
-</div><!-- end Resume -->
+</div>
 
 <div id="about">
   <div class="section-header">
     <h2>About Me</h2>
   </div>
+  <div class="headshot-wrapper">
+    <!-- <hr> -->
+    <div id="headshota" class="headshot"></div>
+    <div id="headshotc" class="headshot"></div>
+    <div id="headshotb" class="headshot"></div>
+  </div>
+  <div class="about-bio">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <section>
+            <h3>Who I Am</h3>
+            <p>I'm Annie Sexton, and I'm a web developer – although I'm sure you've figured that out by now. I was born and raised in the <a href="https://www.google.com/maps/place/Austin,+TX/@30.3077609,-97.7534014,11z/data=!3m1!4b1!4m2!3m1!1s0x8644b599a0cc032f:0x5d9b464bd469d57a" target="_blank">heart of Texas</a>, where I survived solely on barbeque and live music. </p>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8 col-sm-offset-2">
-        <h3>Who I Am</h3>
-        <p>I'm Annie Sexton, and I'm a web developer – although I'm sure you've figured that out by now. I was born and raised in the <a href="https://www.google.com/maps/place/Austin,+TX/@30.3077609,-97.7534014,11z/data=!3m1!4b1!4m2!3m1!1s0x8644b599a0cc032f:0x5d9b464bd469d57a" target="_blank">heart of Texas</a>, where I survived solely on barbeque and live music. </p>
+            <p>After college, I achieved my (at that point) life-long dream of working as an English instructor in Japan. I accidentally fell in love with the magical world of website-making when I was tasked with making tweaks to the school's website, and later I accepted my first-ever web design job in Osaka, Japan.</p>
 
-        <p>After college, I achieved my (at that point) life-long dream of working as an English instructor in Japan. I accidentally fell in love with the magical world of website-making when I was tasked with making tweaks to the school's website, and later I accepted my first-ever web design job in Osaka, Japan.</p>
-
-        <p>These days I'm kicking it in sunny San Diego, California, where I work at Digital Telepathy. When I'm not building kick-ass websites, I'm usually brushing up on my Japanese, reading, traveling, writing, camping, or let's face it – doing more programming.</p>
-
-        <h3>How I Work</h3>
-        <p><strong>I like my code in simple, plain English.</strong> Good code is DRY, simple, but not so cleverly short that it's hard to understand. Compartmentalize and modularize what can be reused or put more plainly.</p>
-        <p><strong>I am language agnostic.</strong> I enjoy watching people squirm when I tell them I write both Ruby and PHP. You can argue until the cows come home about specs, but at the end of the day, the best application is the one written the most efficiently – not the one with the best language.</p>
-        <p><strong>I'm a communicator.</strong></p>
-
-        <h3>How I Live</h3>
-        <p>I believe in kindness over righteousness. I believe in experiences over material things.</p>
-        <p>I believe that perfectionism is the world's great enemy, and is, as Elizabeth Gilbert said, "Fear in high-heeled shoes." Anything worth doing, is worth doing poorly at first.</p>
+            <p>These days I'm kicking it in sunny San Diego, California, where I work at Digital Telepathy. When I'm not building kick-ass websites, I'm usually brushing up on my Japanese, reading, traveling, writing, camping, or let's face it – doing more programming.</p>
+          </section>
+          <section>
+            <h3>How I Work</h3>
+            <p><strong>I like my code in simple, plain English.</strong> Good code is DRY, simple, but not so cleverly short that it's hard to understand. Compartmentalize and modularize what can be reused or put more plainly.</p>
+            <p><strong>I am language agnostic.</strong> I enjoy watching people squirm when I tell them I write both Ruby and PHP. You can argue until the cows come home about specs, but at the end of the day, the best application is the one written the most efficiently – not the one with the best language.</p>
+            <p><strong>I'm a communicator.</strong></p>
+          </section>
+          <section>
+            <h3>How I Live</h3>
+            <p>I believe in kindness over righteousness. I believe in experiences over material things.</p>
+            <p>I believe that perfectionism is the world's great enemy, and is, as Elizabeth Gilbert said, "Fear in high-heeled shoes." Anything worth doing, is worth doing poorly at first.</p>
+          </section>
+        </div>
       </div>
     </div>
   </div>
+  
 </div>
