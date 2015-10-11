@@ -2,7 +2,7 @@
   "portfolio": [
     {
       "name": "Skimword",
-      "where": "(personal project)",
+      "where": "(a personal project)",
       "url": "http://www.skimwordapp.com/",
       "tags": [
         "Ruby on Rails",

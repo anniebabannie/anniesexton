@@ -21,10 +21,7 @@
     }
   }
   .headshot {
-    display: inline-block;
     margin-right: 40px;
-    height: 220px;
-    width: 220px;
     &:last-child { margin-right: 0; }
 
     position: relative;

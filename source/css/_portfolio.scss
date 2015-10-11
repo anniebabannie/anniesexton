@@ -27,7 +27,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    opacity: 0.2;
+    opacity: 0.3;
     @include transition(opacity 0.1s);
     background: rgba(0,0,0,0);
     background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 34%, rgba(0,0,0,1) 100%);
@@ -70,7 +70,7 @@
     @include transition(transform 0.2s ease-out);
   }
   &:hover {
-    .overlay { opacity: 0.3; }
+    .overlay { opacity: 0.4; }
     i { bottom: 15px; }
     img {
       @include scale(1.02);

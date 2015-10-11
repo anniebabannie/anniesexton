@@ -17,14 +17,13 @@
         itemSelector: '.work-block'
       });
     },
-    getTallestProjectBlock: function() {
-      var prevHeight = 0;
+    setProjectBlockHeights: function() {
+      var maxHeight = 0;
       $('.portfolio-block-wrapper').each(function() {
-        if ($(this).height() > prevHeight) {
-          prevHeight = $(this).height();
-        }
+        var projectBlock = $(this).find('.project-block');
+        maxHeight = maxHeight > projectBlock.innerHeight() ? maxHeight : projectBlock.innerHeight();
       });
-      $('.project-block').height(prevHeight);
+      $('.project-block').height(maxHeight);
     },
     heroScroll: function(scrollTop) {
       if( scrollTop <= $(window)[0].innerHeight ) {
@@ -86,7 +85,7 @@
       
       this._bindEvents();
       this._bindVendors();
-      this.getTallestProjectBlock();
+      this.setProjectBlockHeights();
     },
   };
 
