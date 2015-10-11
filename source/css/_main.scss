@@ -2,6 +2,9 @@
   font-family: 'Lato', sans-serif;
   color: #444;
 }
+body {
+  position: relative;
+}
 a {
   color: $link_color;
   @include transition(color 0.15s);

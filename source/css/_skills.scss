@@ -45,6 +45,7 @@
   text-align: center;
   h3 { 
     margin: 0;
+    color: #fff;
     @include transition(margin 0.5s, color 0.5s);
   }
 }
@@ -67,4 +68,16 @@
       background: #F9F9F9;
     }
   }
+}
+#client-side {
+  background: adjust-saturation(tint($secondary_color, 40%), 25%);
+  h3 { text-shadow: -1px 1px 1px $secondary_color; }
+}
+#server-side {
+  background: tint($link_color, 30%);
+  h3 { text-shadow: -1px 1px 1px shade($link_color, 20%); }
+}
+#design-more {
+  background: $yellow;
+  h3 { text-shadow: -1px 1px 1px shade($yellow, 30%); }
 }

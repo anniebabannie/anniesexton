@@ -98,7 +98,7 @@ title: Annie Sexton | Front-end Web Developer
       <div class="col-sm-8 col-sm-offset-2">
         <div id="skills">
           <% data.skills.skills.each do |skill_group| %>
-            <div class="skill-group">
+            <div id="<%= skill_group.slug %>" class="skill-group">
               <div class="skill-group-title">
                 <h3><%= skill_group.group %></h3>
               </div>

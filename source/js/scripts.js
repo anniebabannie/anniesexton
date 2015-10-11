@@ -1,7 +1,7 @@
 ;(function($, window, undefined) {
   var DOMController = {
     selectors: {
-      // Element selectors
+      smoothScroll: '.smooth-scroll'
     },
   
     _bindEvents: function() {
@@ -9,6 +9,11 @@
       $(window).on('scroll', function() {
         var scrollTop = $(window).scrollTop();
           self.heroScroll(scrollTop);
+          self.toggleNav(scrollTop);
+      });
+      $('body').on('click', this.selectors.smoothScroll, function(event){
+        event.preventDefault();
+        self.smoothScrollTo($(this).attr('href'));
       });
     },
 
@@ -16,6 +21,35 @@
       $('#work-experience-wrapper').masonry({
         itemSelector: '.work-block'
       });
+    },
+    smoothScrollTo: function($el, speed, offset, delay) {
+      speed = speed || 500;
+      delay = delay || 0;
+      var top = $el;
+
+      if( isNaN($el) ) {
+        top = $($el).offset().top;
+      }
+
+      top = top + ( parseInt( offset, 10 ) || 0 );
+          
+      $( 'html, body' ).delay( delay ).animate( {
+          scrollTop: top
+      }, {
+          duration: speed,
+          easing: "swing",
+          complete: function() {
+              // Enforce window scroll
+              window.scrollTo( 0, top );
+          }
+      } );
+    },
+    toggleNav: function(scrollTop) {
+      if (scrollTop > 300) {
+        $('#top-nav').addClass('visible');
+      } else {
+        $('#top-nav').removeClass('visible');
+      }
     },
     setProjectBlockHeights: function() {
       var maxHeight = 0;

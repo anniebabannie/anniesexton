@@ -4,20 +4,31 @@
   z-index: 2;
   text-align: center;
   background: #fff;
-  border-bottom: 1px solid #eee;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  opacity: 0.98;
+  top: -50px;
+  @include transition(top 0.3s);
+  &.visible { top: 0; }
   ul {
     padding-left: 0;
-    margin-bottom: 0;
+    margin: 0;
     list-style: none;
   }
   li {
     display: inline-block;
-    width: 24.5%;
+    float: left;
+    width: 25%;
     border-right: 1px solid #eee;
-    &:last-child { margin-right: 0; }
+    &:last-child { border-right: none; }
+    &.active {
+      a { border-bottom-color: $secondary_color; }
+    }
   }
   a {
     display: block;
     padding: 10px;
+    border-bottom: 4px solid #eee;
+    color: #333;
+    font-style: italic;
   }
 }

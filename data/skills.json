@@ -2,6 +2,7 @@
   "skills": [
     {
       "group": "Client-side",
+      "slug": "client-side",
       "skills": [
         [
         "HTML5",
@@ -17,6 +18,7 @@
     },
     {
       "group": "Server-side",
+      "slug": "server-side",
       "skills": [
         [
           "PHP",
@@ -30,6 +32,7 @@
     },
     {
       "group": "Design & More",
+      "slug": "design-more",
       "skills": [
         [
           "Sketch",

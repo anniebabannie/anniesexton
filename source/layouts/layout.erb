@@ -8,19 +8,15 @@
     <meta name="description" content="" />
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag "styles.css" %>
-    <!--[if lt IE 9]>
-    <script src="/html5shiv.js"></script>
-    <%= stylesheet_link_tag "ie" %>
-    <![endif]-->
   </head>
-  <body>
-    <nav id="top-nav" class="nav">
+  <body data-spy="scroll" data-target="#top-nav">
+    <nav id="top-nav">
       <div class="progress-bar"></div>
-      <ul>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#work-experience">Work Experience</a></li>
-        <li><a href="#skills-education">Skills &amp; Education</a></li>
-        <li><a href="#about">About Me</a></li>
+      <ul class="nav" role="tablist">
+        <li class="active"><a class="smooth-scroll" href="#portfolio">Portfolio</a></li>
+        <li><a class="smooth-scroll" href="#work-experience">Work Experience</a></li>
+        <li><a class="smooth-scroll" href="#skills-education">Skills &amp; Education</a></li>
+        <li><a class="smooth-scroll" href="#about">About Me</a></li>
       </ul>
     </nav>
     <%= yield %>
