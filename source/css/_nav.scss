@@ -1,0 +1,23 @@
+#top-nav {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+    width: 24.5%;
+    border-right: 1px solid #eee;
+    &:last-child { margin-right: 0; }
+  }
+  a {
+    display: block;
+    padding: 10px;
+  }
+}
