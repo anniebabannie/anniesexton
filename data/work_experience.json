@@ -6,14 +6,14 @@
       "location": "San Diego, CA",
       "when": "May 2014 – Present",
       "is_current": "true",
-      "description": "Developed responsive marketing sites featuring rich user interactions built in HTML, CSS and JavaScript. Built WordPress themes and plugins from scratch, as well as contributed to high traffic sites such as Tim Ferris’s blog on WordPress VIP. \n Contributed to the front-end development (CSS and AngularJS) of Filament, the company’s blog analytics web application, as well as the Filament WordPress plugin and marketing site."
+      "description": "Developed responsive marketing sites featuring rich interactions built in HTML, CSS and JavaScript. \n Built WordPress themes and plugins from scratch, as well as contributed to high traffic sites such as Tim Ferriss’s blog on WordPress VIP.\n Contributed to the front-end development (CSS and AngularJS) of Filament, the company’s blog analytics web application."
     },
     {
       "title": "Web Developer & Graphic Designer ",
       "company": "Freelance",
       "location": "Solana Beach, CA",
-      "when": "March 2013 - May 2015",
-      "description": "Developed custom WordPress site for new San Diego coupon publication. Programming involved creation of complex custom post types and database relationships. Also developed custom widgets and plugins for the new site.\n Managed content creation of the site including blog posts, social media updates and calendar of events.\n Managed and created newsletter campaigns for the newly launched site."
+      "when": "March 2013 - Dec 2014",
+      "description": "Developed complex WordPress sites for small business clients, involving custom themes and plugins. \n Managed content creation including blog posts, social media updates and calendar of events. \n Managed and created newsletter campaigns for clients."
     },
     {
       "title": "Web Designer & Developer",
@@ -27,7 +27,7 @@
       "company": "Active Gaming Media Inc.",
       "location": "Osaka, Japan",
       "when": "June 2012 – Jan 2013",
-      "description": "Co-designed and developed new SEO-friendly corporate website with a custom-built CMS from scratch using Ruby on Rails.\n Designed elaborate, creative promotional campaigns for PLAYISM, an online international indie game portal.\n Designed banners, logos, assets, and web pages.\n Edited videos for client advertisements."
+      "description": "Developed new studio website using the Genesis framework in WordPress. Features included portfolio of case studies that allowed for flexible content, as well as a responsive design.\n Designed and developed websites for studio clients. Designed banner ads, presentations and other graphics for client work.\n Updated, maintained and improved SEO on existing client websites."
     }
   ]
 }
