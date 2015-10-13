@@ -1,0 +1,37 @@
+footer {
+  padding: 30px 0;
+  .social-icons {
+    padding-left: 0;
+    list-style: none;
+    text-align: right;
+    margin-top: 25px;
+    li {
+      display: inline-block;
+      font-size: 28px;
+    }
+  }
+}
+#github-this-site {
+  position: fixed;
+  display: block;
+  bottom: -50px;
+  right: 20px;
+  color: #333;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  opacity: 0.7;
+  padding-left: 40px;
+  @include transition(opacity 0.15s, bottom 0.5s ease-out);
+  &:hover { opacity: 1; }
+  &.visible {
+    bottom: 20px;
+  }
+  i {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    font-size: 20px;
+  }
+}

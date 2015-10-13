@@ -41,6 +41,26 @@
     top: 0;
   }
 }
+#get-started-arrow {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 36px;
+  z-index: 2;
+  display: block;
+  padding: 30px;
+  i {
+    color: #aaa;
+    @include transition(font 0.1s, color 0.1s);
+  }
+  &:hover i {
+    color: #333;
+    font-size: 38px;
+  }
+}
 .headshot {
   border-radius: 50%;
   background-size: cover;

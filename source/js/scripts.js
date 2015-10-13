@@ -10,13 +10,15 @@
         var scrollTop = $(window).scrollTop();
           self.heroScroll(scrollTop);
           self.toggleNav(scrollTop);
+          if (scrollTop > 800) {
+            self.showGithubLink();
+          }
       });
       $('body').on('click', this.selectors.smoothScroll, function(event){
         event.preventDefault();
         self.smoothScrollTo($(this).attr('href'));
       });
     },
-
     _bindVendors: function() {
       $('#work-experience-wrapper').masonry({
         itemSelector: '.work-block'
@@ -51,6 +53,9 @@
         $('#top-nav').removeClass('visible');
       }
     },
+    showGithubLink: function() {
+      $('#github-this-site').addClass('visible');
+    },
     setProjectBlockHeights: function() {
       var maxHeight = 0;
       $('.portfolio-block-wrapper').each(function() {
@@ -68,8 +73,8 @@
           transform: 'translate(0, ' + scrollTransform + '%)',
           opacity: (100 - (scrollTransform*4))/100
         });
-        $('#hero-overlay img').css({
-          opacity: (scrollTransform + 30)/100
+        $('#hero i').css({
+          opacity: (100 - (scrollTransform*4))/100
         });
       }
     },
