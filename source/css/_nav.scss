@@ -7,8 +7,12 @@
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
   opacity: 0.98;
   top: -50px;
+  display: none;
   @include transition(top 0.3s);
   &.visible { top: 0; }
+  @media screen and (min-width: $screen-sm-min) {
+    display: block;
+  }
   ul {
     padding-left: 0;
     margin: 0;
@@ -17,7 +21,7 @@
   li {
     display: inline-block;
     float: left;
-    width: 25%;
+    width: 20%;
     border-right: 1px solid #eee;
     &:last-child { border-right: none; }
     &.active {
@@ -30,5 +34,12 @@
     border-bottom: 4px solid #eee;
     color: #333;
     font-style: italic;
+    @include transition(background 0.1s);
+  }
+  a#email-me {
+    background: $link_color;
+    color: #fff;
+    border-color: shade($link_color, 15%);
+    &:hover { background: shade($link_color, 15%); }
   }
 }

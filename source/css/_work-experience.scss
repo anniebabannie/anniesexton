@@ -9,13 +9,16 @@
   border: 1px solid #ccc;
   box-shadow: 0 0 3px rgba(0,0,0,0.3);
   border-radius: 3px;
-  width: 48%;
+  width: 100%;
   margin-bottom: 20px;
   margin-right: 2%;
   overflow: hidden;
   background: #fff;
   &:nth-child(even) {
     margin-right: 0;
+  }
+  @media screen and (min-width: $screen-md-min) {
+    width: 48%;
   }
 }
 .work-header {

@@ -1,3 +1,4 @@
+$headshot_dimension: 220px;
 #hero {
   height: 100vh;
   padding-bottom: 5%;
@@ -41,6 +42,24 @@
     top: 0;
   }
 }
+.hero-headshot {
+  width: 100%;
+  @media screen and (min-width: $screen-md-min) {
+    width: 25%;
+  }
+}
+.headshot-wrapper {
+  width: $headshot_dimension;
+  height: $headshot_dimension;
+  margin: 0 auto;
+  position: relative;
+}
+.hero-copy {
+  text-align: center;
+  @media screen and (min-width: $screen-md-min) {
+    text-align: left;
+  }
+}
 #get-started-arrow {
   position: absolute;
   bottom: 10%;
@@ -64,11 +83,11 @@
 .headshot {
   border-radius: 50%;
   background-size: cover;
-  position: center center;
+  background-position: center center;
 
   display: inline-block;
-  height: 220px;
-  width: 220px;
+  height: $headshot_dimension;
+  width: $headshot_dimension;
   &:after {
     content: "";
     display: block;
