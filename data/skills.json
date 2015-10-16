@@ -11,10 +11,11 @@
         "Bootstrap",
         "jQuery + JavaScript",
         "Grunt",
-        "Middleman"
+        "Middleman",
+        "ReactJS",
+        "AngularJS"
         ]
-      ],
-      "experience_with": [ "ReactJS", "AngularJS" ]
+      ]
     },
     {
       "group": "Server-side",
@@ -25,10 +26,11 @@
           "Ruby on Rails",
           "WordPress – Theme Development",
           "WordPress – Plugin Development",
-          "Git and SVN"
+          "Git and SVN",
+          "Laravel",
+          "CodeIgniter"
         ]
-      ],
-      "experience_with": [ "Laravel", "CodeIgniter" ]
+      ]
     },
     {
       "group": "Design & More",

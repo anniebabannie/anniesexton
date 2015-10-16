@@ -15,8 +15,10 @@
           }
       });
       $('body').on('click', this.selectors.smoothScroll, function(event){
-        event.preventDefault();
-        self.smoothScrollTo($(this).attr('href'));
+        if (!$(event.target).is('#email-me')) {
+          event.preventDefault();
+          self.smoothScrollTo($(this).attr('href'));
+        }
       });
       $('.tag').on('click', function(e){
         self.toggleTags($(e.target));

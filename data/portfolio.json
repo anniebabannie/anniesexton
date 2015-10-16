@@ -1,18 +1,17 @@
 {
+  "current_project": {
+    "name": "Skimword",
+    "url": "http://www.skimwordapp.com/",
+    "tags": [
+      "Ruby on Rails",
+      "HTML5/CSS3",
+      "ReactJS",
+      "jQuery + AJAX"
+    ],
+    "img": "skimword.png",
+    "description": ""
+  },
   "portfolio": [
-    {
-      "name": "Skimword",
-      "where": "(a personal project)",
-      "url": "http://www.skimwordapp.com/",
-      "tags": [
-        "Ruby on Rails",
-        "HTML5/CSS3",
-        "ReactJS",
-        "jQuery"
-      ],
-      "img": "skimword.png",
-      "description": ""
-    },
     {
       "name": "Complete Trailers",
       "where": "Digital Telepathy",
@@ -23,7 +22,7 @@
         "HTML5/CSS3",
         "Responsive",
         "jQuery"
-      ],
+        ],
       "img": "completetrailers.png",
       "description": ""
     },
@@ -54,6 +53,19 @@
         "jQuery + AJAX"
       ],
       "img": "dtblog.png",
+      "description": ""
+    },
+    {
+      "name": "Four Hour Work Week – Home page",
+      "where": "Digital Telepathy",
+      "url": "http://fourhourworkweek.com/",
+      "tags": [
+        "WordPress",
+        "HTML5/CSS3",
+        "Responsive",
+        "WordPress VIP"
+      ],
+      "img": "4hww.png",
       "description": ""
     },
     {
