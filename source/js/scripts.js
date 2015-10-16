@@ -18,6 +18,9 @@
         event.preventDefault();
         self.smoothScrollTo($(this).attr('href'));
       });
+      $('.tag').on('click', function(e){
+        self.toggleTags($(e.target));
+      })
     },
     _bindVendors: function() {
       $('#work-experience-wrapper').masonry({
@@ -55,6 +58,23 @@
     },
     showGithubLink: function() {
       $('#github-this-site').addClass('visible');
+    },
+    toggleTags: function(clickedTag) {
+      var tag = clickedTag.data('tag');
+      if (clickedTag.hasClass('active')) {
+        $('.tag').removeClass('active');
+        $('.portfolio-block-wrapper').addClass('visible');
+      } else {
+        $('.tag').removeClass('active');
+        $('.portfolio-block-wrapper').removeClass('visible');
+        $('.portfolio-block-wrapper').each(function() {
+          var tagElement = $(this).find('.tag[data-tag="' + tag + '"]');
+          if (tagElement.length) {
+            tagElement.addClass('active')
+            $(this).addClass('visible');
+          }
+        });
+      }
     },
     setProjectBlockHeights: function() {
       var maxHeight = 0;

@@ -40,7 +40,7 @@ title: Annie Sexton | Full Stack Web Developer
     </div>
     <div class="row">
       <% data.portfolio.portfolio.each do |project| %>
-        <div class="col-md-4 col-sm-6 portfolio-block-wrapper">
+        <div class="col-md-4 col-sm-6 portfolio-block-wrapper visible">
           <div class="project-block">
             <a href="<%= project.url %>" target="_blank"class="project-screenshot">
               <%= image_tag "portfolio/" + project.img %>
@@ -52,7 +52,7 @@ title: Annie Sexton | Full Stack Web Developer
               <div class="where"><i class="icon-location"></i> <%= project.where %></div>
               <div class="project-tags">
                 <% project.tags.each do |tag| %>
-                  <span class="tag"><%= tag %></span>
+                  <span class="tag" data-tag="<%= tag %>"><%= tag %></span>
                 <% end %>
               </div>
             </div>

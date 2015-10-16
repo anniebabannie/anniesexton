@@ -69,6 +69,11 @@
     }
   }
 }
+.portfolio-block-wrapper {
+  opacity: 0.2;
+  @include transition(opacity 0.2s);
+  &.visible { opacity: 1; }
+}
 .project-details {
   padding: 20px;
   h3 { 
@@ -85,6 +90,14 @@
     font-size: 12px;
     margin: 2px 2px 2px 0;
     color: $secondary_color;
+    cursor: pointer;
+    &:hover {
+      background: adjust-saturation(tint($secondary_color, 85%), 25%);
+    }
+    &.active {
+      color: shade($yellow, 20%);
+      background: tint($yellow, 50%);
+    }
   }
 }
 .project-tags {
