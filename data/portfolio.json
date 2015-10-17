@@ -6,10 +6,12 @@
       "Ruby on Rails",
       "HTML5/CSS3",
       "ReactJS",
-      "jQuery + AJAX"
+      "jQuery + AJAX",
+      "Logo Design",
+      "Web Design"
     ],
     "img": "skimword.png",
-    "description": ""
+    "description": "What started out as a personal side project to help me with my Japanese studies has evolved into a full-fledged web application with a healthy following of over 160 users.\n Skimword is a Japanese reading comprehension tool that helps you quickly build custom vocabulary lists, based on real content that you find. The way it works is simple: Paste in some Japanese text that you'd like to read, then highlight the words you don't know. Skimword automatically looks up with words for you and puts them in a list for you to study later. You can then upload these lists of words into your favorite flashcard program."
   },
   "portfolio": [
     {
@@ -69,29 +71,18 @@
       "description": ""
     },
     {
-      "name": "New Relic Blog",
+      "name": "New Relic Blog Redesign",
       "where": "Digital Telepathy",
       "url": "https://blog.newrelic.com/",
       "tags": [
         "WordPress",
         "HTML5/CSS3",
-        "Responsive"
+        "Responsive",
+        "jQuery"
       ],
       "img": "newrelic-blog.png",
       "description": ""
     },
-    // {
-    //   "name": "Social Centiv Landing Page",
-    //   "where": "Digital Telepathy",
-    //   "url": "",
-    //   "tags": [
-    //     "HTML5/CSS3",
-    //     "Responsive",
-    //     "jQuery + AJAX"
-    //   ],
-    //   "img": "skimword.png",
-    //   "description": ""
-    // },
     {
       "name": "OpenJet",
       "where": "Digital Telepathy",

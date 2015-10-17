@@ -65,11 +65,11 @@
       var tag = clickedTag.data('tag');
       if (clickedTag.hasClass('active')) {
         $('.tag').removeClass('active');
-        $('.portfolio-block-wrapper').addClass('visible');
+        $('.tag-filtered').addClass('visible');
       } else {
         $('.tag').removeClass('active');
-        $('.portfolio-block-wrapper').removeClass('visible');
-        $('.portfolio-block-wrapper').each(function() {
+        $('.tag-filtered').removeClass('visible');
+        $('.tag-filtered').each(function() {
           var tagElement = $(this).find('.tag[data-tag="' + tag + '"]');
           if (tagElement.length) {
             tagElement.addClass('active')

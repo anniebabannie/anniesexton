@@ -1,7 +1,6 @@
 ---
 title: Annie Sexton | Full Stack Web Developer
 ---
-
 <div id="hero" class="table gray-gradient">
   <div class="table-cell">
     <div class="container">
@@ -39,10 +38,32 @@ title: Annie Sexton | Full Stack Web Developer
       <h2>Portfolio</h2>
     </div>
     <div class="row">
+      <% current = data.portfolio.current_project %>
+      <div class="col-sm-12 tag-filtered visible">
+        <div id="current-project">
+          <a href="<%= current.url %>" target="_blank" class="project-screenshot" style="background-image: url(/img/portfolio/<%= current.img %>);">
+            <i class="icon-link-ext"></i>
+            <span class="overlay"></span>
+          </a>
+          <div class="current-project-details">
+            <article>
+              <h3>Current Project: <a href="<%= current.url %>" target="_blank"><%= current.name %></a></h3>
+              <p><%= current.description.gsub(/\n/, '<div class="break"></div>') %></p>
+              <div class="project-tags">
+                <% current.tags.each do |tag| %>
+                  <span class="tag" data-tag="<%= tag %>"><%= tag %></span>
+                <% end %>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
       <% data.portfolio.portfolio.each do |project| %>
-        <div class="col-md-4 col-sm-6 portfolio-block-wrapper visible">
+        <div class="col-md-4 col-sm-6 tag-filtered portfolio-block-wrapper visible">
           <div class="project-block">
-            <a href="<%= project.url %>" target="_blank"class="project-screenshot">
+            <a href="<%= project.url %>" target="_blank" class="project-screenshot">
               <%= image_tag "portfolio/" + project.img %>
               <i class="icon-link-ext"></i>
               <span class="overlay"></span>
