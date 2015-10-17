@@ -37,9 +37,9 @@
     @include transition(background 0.1s);
   }
   a#email-me {
-    background: $link_color;
+    background: $primary_color;
     color: #fff;
-    border-color: shade($link_color, 15%);
-    &:hover { background: shade($link_color, 15%); }
+    border-color: shade($primary_color, 15%);
+    &:hover { background: shade($primary_color, 15%); }
   }
 }

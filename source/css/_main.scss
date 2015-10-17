@@ -6,12 +6,12 @@ body {
   position: relative;
 }
 a {
-  color: $link_color;
+  color: $primary_color;
   @include transition(color 0.15s);
   &:hover,
   &:active,
   &:focus { 
-    color: shade($link_color, 20%);
+    color: shade($primary_color, 20%);
     text-decoration: none;
   }
 }

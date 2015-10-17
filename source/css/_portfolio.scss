@@ -119,8 +119,8 @@
       background: adjust-saturation(tint($secondary_color, 85%), 25%);
     }
     &.active {
-      color: shade($yellow, 20%);
-      background: tint($yellow, 50%);
+      color: shade($tertiary_color, 20%);
+      background: tint($tertiary_color, 50%);
     }
   }
 }
