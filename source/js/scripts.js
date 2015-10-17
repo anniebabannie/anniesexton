@@ -1,16 +1,23 @@
 ;(function($, window, undefined) {
-  var DOMController = {
+  var AnnieScript = {
     selectors: {
-      smoothScroll: '.smooth-scroll'
+      smoothScroll: '.smooth-scroll',
+      workExperienceWrapper: '#work-experience-wrapper',
+      topNav: '#top-nav',
+      portfolioBlockWrapper: '.portfolio-block-wrapper',
+      heroTableCell: '#hero .table-cell',
+      heroDownArrow: '#hero i',
+      tag: '.tag',
+      tagFiltered: '.tag-filtered'
     },
-  
+    displayGithubLinkPoint: 800,
     _bindEvents: function() {
       var self = this;
       $(window).on('scroll', function() {
         var scrollTop = $(window).scrollTop();
           self.heroScroll(scrollTop);
           self.toggleNav(scrollTop);
-          if (scrollTop > 800) {
+          if (scrollTop > self.displayGithubLinkPoint) {
             self.showGithubLink();
           }
       });
@@ -20,12 +27,12 @@
           self.smoothScrollTo($(this).attr('href'));
         }
       });
-      $('.tag').on('click', function(e){
+      this.elements.tag.on('click', function(e){
         self.toggleTags($(e.target));
-      })
+      });
     },
     _bindVendors: function() {
-      $('#work-experience-wrapper').masonry({
+      this.elements.workExperienceWrapper.masonry({
         itemSelector: '.work-block'
       });
     },
@@ -33,11 +40,9 @@
       speed = speed || 500;
       delay = delay || 0;
       var top = $el;
-
       if( isNaN($el) ) {
         top = $($el).offset().top;
       }
-
       top = top + ( parseInt( offset, 10 ) || 0 );
           
       $( 'html, body' ).delay( delay ).animate( {
@@ -49,13 +54,14 @@
               // Enforce window scroll
               window.scrollTo( 0, top );
           }
-      } );
+      });
     },
+    displayNavPoint: 300,
     toggleNav: function(scrollTop) {
-      if (scrollTop > 300) {
-        $('#top-nav').addClass('visible');
+      if (scrollTop > this.displayNavPoint) {
+        this.elements.topNav.addClass('visible');
       } else {
-        $('#top-nav').removeClass('visible');
+        this.elements.topNav.removeClass('visible');
       }
     },
     showGithubLink: function() {
@@ -64,12 +70,12 @@
     toggleTags: function(clickedTag) {
       var tag = clickedTag.data('tag');
       if (clickedTag.hasClass('active')) {
-        $('.tag').removeClass('active');
-        $('.tag-filtered').addClass('visible');
+        this.elements.tag.removeClass('active');
+        this.elements.tagFiltered.addClass('visible');
       } else {
-        $('.tag').removeClass('active');
-        $('.tag-filtered').removeClass('visible');
-        $('.tag-filtered').each(function() {
+        this.elements.tag.removeClass('active');
+        this.elements.tagFiltered.removeClass('visible');
+        this.elements.tagFiltered.each(function() {
           var tagElement = $(this).find('.tag[data-tag="' + tag + '"]');
           if (tagElement.length) {
             tagElement.addClass('active')
@@ -80,7 +86,7 @@
     },
     setProjectBlockHeights: function() {
       var maxHeight = 0;
-      $('.portfolio-block-wrapper').each(function() {
+      this.elements.portfolioBlockWrapper.each(function() {
         var projectBlock = $(this).find('.project-block');
         maxHeight = maxHeight > projectBlock.innerHeight() ? maxHeight : projectBlock.innerHeight();
       });
@@ -91,11 +97,11 @@
         var scrollPercent = $(window).scrollTop()/$(window)[0].innerHeight,
         scrollTransform = (scrollPercent * ($(window)[0].innerHeight * 0.05));
 
-        $('#hero .table-cell').css({
+        this.elements.heroTableCell.css({
           transform: 'translate(0, ' + scrollTransform + '%)',
           opacity: (100 - (scrollTransform*4))/100
         });
-        $('#hero i').css({
+        this.elements.heroDownArrow.css({
           opacity: (100 - (scrollTransform*4))/100
         });
       }
@@ -133,12 +139,6 @@
       return getElements(selectors);
     },
 
-    /**
-     * DOMController initialization
-     * 
-     * @param  {Object} context Optional `document` or DOM element Object to act as the context
-     *                          for all element queries and event binding.
-     */
     initialize: function(context){
       this.context = context || window.document;
 
@@ -151,6 +151,6 @@
   };
 
   $(function(){
-    DOMController.initialize();
+    AnnieScript.initialize();
   });
 })(jQuery, window, null);
