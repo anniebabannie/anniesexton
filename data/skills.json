@@ -24,11 +24,14 @@
         [
           "PHP",
           "Ruby on Rails",
-          "WordPress – Theme Development",
-          "WordPress – Plugin Development",
+          "WordPress – Theme & Plugin Development",
           "Git and SVN",
           "Laravel",
-          "CodeIgniter"
+          "CodeIgniter",
+          "Postgres",
+          "MySQL",
+          "Stripe API",
+          "Heroku CLI"
         ]
       ]
     },
