@@ -5,7 +5,7 @@
     "tags": [
       "Ruby on Rails",
       "HTML5/CSS3",
-      // "ReactJS",
+      "ReactJS",
       "jQuery + AJAX",
       "Logo Design",
       "Web Design"
@@ -84,6 +84,18 @@
       "description": ""
     },
     {
+      "name": "Rollbar Homepage",
+      "where": "Digital Telepathy",
+      "url": "https://rollbar.com/",
+      "tags": [
+        "HTML5/CSS3",
+        "Responsive",
+        "jQuery"
+      ],
+      "img": "rollbar.png",
+      "description": ""
+    },
+    {
       "name": "OpenJet",
       "where": "Digital Telepathy",
       "url": "http://www.openjet.com/operators/index.html",
@@ -95,19 +107,34 @@
       "img": "openjet.png",
       "description": ""
     },
-    {
-      "name": "Studio 2055",
-      "where": "Studio 2055",
-      "url": "http://www.studio2055.com",
-      "tags": [
-        "WordPress",
-        "CSS3",
-        "Responsive",
-        "jQuery"
-      ],
-      "img": "studio2055.png",
-      "description": ""
-    },
+    // {
+    //   "name": "Studio 2055",
+    //   "where": "Studio 2055",
+    //   "url": "http://www.studio2055.com",
+    //   "tags": [
+    //     "WordPress",
+    //     "CSS3",
+    //     "Responsive",
+    //     "jQuery"
+    //   ],
+    //   "img": "studio2055.png",
+    //   "description": ""
+    // },
+    // {
+    //   "name": "Spanish Village Art Center",
+    //   "where": "Freelance",
+    //   "url": "http://spanishvillageart.com/",
+    //   "tags": [
+    //     "Web Design",
+    //     "WordPress",
+    //     "Custom Theme",
+    //     "HTML5/CSS3",
+    //     "Responsive",
+    //     "jQuery"
+    //   ],
+    //   "img": "forbeswellness.png",
+    //   "description": ""
+    // },
     {
       "name": "Forbes Wellness",
       "where": "Freelance",
